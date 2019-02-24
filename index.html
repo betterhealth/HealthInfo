@@ -120,7 +120,7 @@
         <ul class="home-sidelinks">
             <li><a class="smoothscroll" href="#about">About<span>who we are</span></a></li>
             <li><a class="smoothscroll" href="#services">Product<span>how it works</span></a></li>
-            <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
+            <li><a  class="smoothscroll" href="#contact">Sign up!<span>join beta program</span></a></li>
         </ul> <!-- end home-sidelinks -->
 
         <!--
@@ -610,67 +610,64 @@
                 <h1 class="display-1 display-1--light">Sign up today to join our private beta program!</h1>
             </div>
         </div> <!-- end section-header -->
-        
 
         
-        <div class="row" align="center">
+	    <iframe
+    id="surveylegend-survey"
+    src="https://www.surveylegend.com/s/1b7v"
+    width="50%"
+    height="1000px"
+    allowtransparency="true"
+    style="frameborder: 0; border: 0; margin: auto; background: transparent; background-color: transparent;">
+</iframe>
 
-            <div class="col-full contact-main" data-aos="fade-up">
-                <p>
-                <!-- <a href="mailto:#0" class="contact-email">hello@transcend-studio.com</a>
-                <span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span> -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCEMmQkAAI6s6Qqw8cEFeEV6nxCQhCofDohhAF0CjsKXl7mw/viewform?embedded=true" width="640" height="1167" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </p>
-            </div> <!-- end contact-main -->
 
-        </div> <!-- end row -->
+        <div class="container">
+		  <form action="/action_page.php">
+		  <div class="row">
+		    <div class="col-25">
+		      <label for="fname">Full Name</label>
+		    </div>
+		    <div class="col-75">
+		      <input type="text" id="fname" name="name" placeholder="Full name">
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-25">
+		      <label for="lname">Email Address</label>
+		    </div>
+		    <div class="col-75">
+		      <input type="text" id="lname" name="lastname" placeholder="Email address">
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-25">
+		      <label for="country">Your role</label>
+		    </div>
+		    <div class="col-75">
+		      <select id="country" name="country">
+		        <option value="australia">Patient</option>
+		        <option value="canada">Caregiver</option>
+		        <option value="usa">Doctor</option>
+		        <option value="usa">Other</option>
+		      </select>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-25">
+		      <label for="subject">Additional Comments</label>
+		    </div>
+		    <div class="col-75">
+		      <textarea id="subject" name="Comments" placeholder="Any comments/questions/concerns?" style="height:10px"></textarea>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <input type="submit" value="Submit">
+		  </div>
+		  </form>
+		</div>
 
-        <div class="container" align="center">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="fname">Full Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="name" placeholder="Full name">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lname">Email Address</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Email address">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="country">Your role</label>
-    </div>
-    <div class="col-75">
-      <select id="country" name="country">
-        <option value="australia">Patient</option>
-        <option value="canada">Caregiver</option>
-        <option value="usa">Doctor</option>
-        <option value="usa">Other</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Additional Comments</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="Comments" placeholder="Any comments/questions/concerns?" style="height:10px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
 
-<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd185ORmB0USzFuStUEA8iZPcSnUlgVqNlx68zz8RcJgS.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>
         <!-- 
         <div class="row">
 
