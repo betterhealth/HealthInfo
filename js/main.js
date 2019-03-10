@@ -96,7 +96,7 @@
     };
 
     var $form = $('test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbyf5sPC7b6PfuOoVSFMGDqmJMH7WtRpRAo9XUvK7dpU-Rr7LqKs/exec'
+    url = 'https://script.google.com/macros/s/AKfycbwKCU_-HzqEvAX-kPQTIyWXBM1O96BHCmoIsz0TvU29b-3V08Q/exec'
 
     $('#submit-form').on('click', function(e) {
       e.preventDefault();
