@@ -99,7 +99,6 @@
     url = 'https://script.google.com/macros/s/AKfycbyf5sPC7b6PfuOoVSFMGDqmJMH7WtRpRAo9XUvK7dpU-Rr7LqKs/exec'
 
 $('#submit-form').on('click', function(e) {
-  alert(url)
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
