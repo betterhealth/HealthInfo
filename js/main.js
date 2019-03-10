@@ -98,7 +98,7 @@
     var $form = $('form#test-form'),
         url = 'https://script.google.com/macros/s/AKfycbwKCU_-HzqEvAX-kPQTIyWXBM1O96BHCmoIsz0TvU29b-3V08Q/exec'
 
-        
+
     $('#submit-form').on('click', function(e) {
       e.preventDefault();
       var jqxhr = $.ajax({
@@ -107,7 +107,7 @@
         dataType: "json",
         data: $form.serializeObject()
       }).success(
-        // do something
+        alert("success")
       );
     })
 
