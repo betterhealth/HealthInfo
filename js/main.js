@@ -131,6 +131,7 @@ $("#foo").submit(function(event){
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
         // Log a message to the console
+        alert("success!");
         console.log("Hooray, it worked!");
         console.log(response);
         console.log(textStatus);
@@ -140,6 +141,7 @@ $("#foo").submit(function(event){
     // Callback handler that will be called on failure
     request.fail(function (jqXHR, textStatus, errorThrown){
         // Log the error to the console
+        alert("failure");
         console.error(
             "The following error occurred: "+
             textStatus, errorThrown
