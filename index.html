@@ -609,29 +609,27 @@
             </div>
         </div> <!-- end section-header -->
 
+        <form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
 
-    <!-- Contact Form - sent to a Google Sheet -->
-    <form id='foo'>
-      <p>
-        <label>Whole Name</label>
-        <input id='name' name='name' type='text'>
-      </p><p>
-        <label>Email Address</label>
-        <input id='email' name='email' type='email'>
-      </p><p>
-        <label>Phone Number</label>
-        <input id='phone' name='phone' type='tel'>
-      </p><p>
-        <label>Message</label>
-        <textarea id='message' name='message' rows='5'></textarea>
-      </p>
-        <div id='success'></div>
-        <button type='submit'>Send</button>
-    </form>
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- Custom Theme JavaScript -->
-  <script src='google-sheet.js'></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw6rk2o-FPWqgWORl3PDmhE9_dJmeS6oyDCgjTiMLLXAKaZJlSP/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
 
 <!--
         <div class="container">
