@@ -95,7 +95,7 @@
 
     };
 
-    var $form = $('form#test-form'),
+    var $form = $('test-form'),
     url = 'https://script.google.com/macros/s/AKfycbyf5sPC7b6PfuOoVSFMGDqmJMH7WtRpRAo9XUvK7dpU-Rr7LqKs/exec'
 
     $('#submit-form').on('click', function(e) {
