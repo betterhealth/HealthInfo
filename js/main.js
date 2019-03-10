@@ -105,7 +105,7 @@ $('#submit-form').on('click', function(e) {
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
-  }).failure(
+  }).success(
     alert("submitted")
   );
 })
