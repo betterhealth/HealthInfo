@@ -100,13 +100,15 @@
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
+  alert("hello")
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    alert(data)
+    alert("success")
+
   );
 })
 
