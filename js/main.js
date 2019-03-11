@@ -100,7 +100,7 @@
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
-  alert("changed stuff")
+  alert("more stuff")
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
