@@ -626,10 +626,11 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  font-family: "metropolis-regular", sans-serif;
 }
 
 label {
-  padding: 12px 12px 12px 0;
+  padding: 0;
   display: inline-block;
 }
 
@@ -653,6 +654,9 @@ input[type=submit]:hover {
   padding: 20px;
   width: 50%;
   margin: auto;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .col-25 {
@@ -795,6 +799,8 @@ label > input[type="radio"] {
   position: relative;
   top: 0.15rem;
 }
+
+
 
 
 /* ------------------------------------------------------------------- 
