@@ -657,6 +657,7 @@ input[type=submit]:hover {
   font-family: "metropolis-regular", sans-serif;
   font-size: 1.5rem;
   color: black;
+  line-height: 0em;
 }
 
 .col-25 {

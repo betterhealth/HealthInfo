@@ -111,7 +111,7 @@
             dataType: "json",
             data: $form.serializeObject()
           }).success(
-            alert("success")
+            window.location.href = "action.html"
 
           );
         })
